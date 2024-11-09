@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(12, 11, 11, 0.927);
+}
+
+header {
+  min-height: 10dvh;
+  display: flex;
+  align-items: center;
+}
+
+ul.nav-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+  gap: 2rem;
+}
+
+li {
+  color: aliceblue;
+  font-size: 1.5rem;
+  list-style: none;
+}
