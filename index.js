@@ -32,6 +32,10 @@ app.get("/", (req, res) => {
   res.render("content");
 });
 
+app.get("/our-service", (req, res) => {
+  res.send();
+});
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });

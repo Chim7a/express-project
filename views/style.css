@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,15 @@
 
 body {
   background-color: rgba(12, 11, 11, 0.927);
+  font-family: "Maven Pro", serif;
 }
 
 header {
   min-height: 10dvh;
   display: flex;
   align-items: center;
+  background-color: rgba(128, 128, 128, 0.152);
+  border-bottom: 1px solid #c99a23d0;
 }
 
 ul.nav-container {
@@ -19,11 +24,22 @@ ul.nav-container {
   justify-content: center;
   margin: 0 auto;
   max-width: 600px;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 li {
   color: aliceblue;
-  font-size: 1.5rem;
+  font-size: 1rem;
   list-style: none;
+}
+
+/* Footer */
+
+footer {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10dvh;
+  background-color: #c99a23d0;
 }

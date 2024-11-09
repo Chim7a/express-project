@@ -1,0 +1,66 @@
+.hover-container {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 80dvh;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 254px;
+  border-radius: 4px;
+  background: #212121;
+  display: flex;
+  gap: 5px;
+  padding: 0.4em;
+}
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.5s;
+  background: #212121;
+  border: 2px solid #c99a23d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card .bg-img-1 {
+  background-image: url("https://images.unsplash.com/photo-1652664845183-c6083bc286fc?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.card .bg-img-2 {
+  background-image: url("https://images.unsplash.com/photo-1668783774934-ff7f5be064ee?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.card .bg-img-3 {
+  background-image: url("https://images.unsplash.com/photo-1510736769521-207ed84f191e?q=80&w=2872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.card p:hover {
+  flex: 10;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: 0.5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+  text-transform: uppercase;
+  color: #c99a23d0;
+  letter-spacing: 0.1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}

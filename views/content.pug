@@ -3,11 +3,15 @@ html
    head
    style
       include style.css
+      include index.css
 
       title Simple template
 
+      script(src='/card.js')
    body
 
       include ./header.pug
 
-      h3 I'm the main content
+      include ./index.html
+
+      include ./footer
