@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     return next();
   }
 
-  res.status(300).send("We have closed for the day");
+  res.status(300).send("We have closed for the Week");
 });
 
 app.get("/", (req, res) => {
@@ -33,7 +33,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/our-service", (req, res) => {
-  res.send();
+  res.send("service");
+});
+
+app.get("/contact-us", (req, res) => {
+  res.send("contact");
 });
 
 app.listen(port, () => {

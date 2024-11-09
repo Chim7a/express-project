@@ -27,10 +27,11 @@ ul.nav-container {
   gap: 1.5rem;
 }
 
-li {
+a {
+  text-decoration: none;
   color: aliceblue;
   font-size: 1rem;
-  list-style: none;
+  font-weight: 600;
 }
 
 /* Footer */
