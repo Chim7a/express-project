@@ -7,21 +7,17 @@ app.set("view engine", "pug");
 app.set("views", "./views");
 
 // Built-in middleware for static files like css
-app.use(express.static("public"));
+app.use(express.static("views"));
 
 app.use((req, res, next) => {
   const day = new Date().getDay();
   const hour = new Date().getHours();
 
-  //   console.log(day);
-  //   console.log(hour);
-  //   console.log(req.url);
-
-  //   if ((hour >= 9) & (hour <= 17) & (day >= 6)) {
+  //   if ((hour >= 9) & (hour <= 17) & (day > 0) & (day < 6)) {
   //     return next();
   //   }
 
-  if (day >= 6) {
+  if (day < 6) {
     return next();
   }
 
@@ -33,11 +29,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/our-service", (req, res) => {
-  res.send("service");
+  res.render("service.pug");
 });
 
 app.get("/contact-us", (req, res) => {
-  res.send("contact");
+  res.render("contact.pug");
 });
 
 app.listen(port, () => {
